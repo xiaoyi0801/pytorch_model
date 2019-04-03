@@ -1,0 +1,12 @@
+model:
+  type: resnet18
+  num_classes: 37
+  weights: None
+solver:
+  base_lr: 0.001
+  weight_decay: 0
+  num_epochs: 100
+train:
+  dataset_path: /fastai/data/oxford-iiit-pet/images/
+  csv_path: /fastai/pytorch_model/data
+  batch_size: 32
